@@ -1,6 +1,6 @@
 
 var config = {
-    "localPort": 80,
+    "localPort": 8050,
     "apiPrefix": "/api/v1"
 };
 
