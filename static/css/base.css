@@ -1,0 +1,47 @@
+/* var */
+/* Base */
+a {
+  text-decoration: none;
+  color: #f6f6f6;
+}
+a:hover,
+a:active,
+a:focus {
+  text-decoration: none;
+  color: #d1d1d1;
+}
+html {
+  position: relative;
+  min-height: 100%;
+}
+/* Sticky footer styles */
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 8.5rem;
+  color: #5a5a5a;
+}
+.row-margin-bottom {
+  margin-bottom: 2.5rem;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 8.5rem;
+  padding: 2rem 0;
+  background-color: #588d55;
+  text-align: center;
+}
+.footer .y-footer-inner {
+  line-height: 1.5rem;
+  color: #f6f6f6;
+  font-size: 0.8rem;
+}
+.footer .y-footer-inner a {
+  color: #f6f6f6;
+}
+.footer .y-footer-inner a:hover,
+.footer .y-footer-inner a:active,
+.footer .y-footer-inner a:focus {
+  color: #d1d1d1;
+}

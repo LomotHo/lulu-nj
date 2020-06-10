@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+{# <html lang="zh" class="no-js"> #}
+<html lang="zh-CN">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <title>{{ ui.title }}</title>
+
+	<link rel="stylesheet" type="text/css" href="lib/layui/css/layui.css">
+	<link rel="stylesheet" type="text/css" href="lib/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="lib/css/demo.css" />
+	<link rel="stylesheet" type="text/css" href="lib/css/component.css" />
+	<link rel="stylesheet" type="text/css" href="lib/css/danmu.css" />
+	<script type="text/javascript" src="lib/js/danmu.js"></script>
+	<script src="barrager/js/jquery.min.js"></script>
+	<script src="barrager/dist/jquery.barrager.js"></script>
+	<style type="text/css">
+		.bg-img{
+			widows: 100%;
+			height: 100%；
+		}
+		.nav{
+			font-family: SIMHEI;
+			height: 70px;
+			width: 100%;
+			float: right;
+			line-height: 70px;
+			z-index: 1;
+			position: fixed;
+			background-color: rgba(255,255,255,0.9);
+			top: 0;
+		}
+		.nav li{
+			float: left;
+			margin-left: 40px;
+		}
+		.title img{
+			position: absolute;
+			left: 20px;
+		}
+	</style>
+</head>
+<body class="demo-1">
+	<div id="container" class="container intro-effect-push">
+		{# <header class="header" id = "head">
+			<!-- <img  src="images/lulu.png"/> -->
+			<div class="bg-img"><img src="images/lulu_window.jpg" alt="Background Image"/></div>
+			<div class="title">				
+				<h1 style="color: #4cb4e7;">雫るる</h1>
+				<h2 style="color: #ffee93;">超爱游戏，超爱拉面，自宅警备员lulu</h2>
+				<!-- <ul>
+					<li><a href="https://space.bilibili.com/387636363/"></a><img src="images/bilibili.png"/></a></li>
+					<li><a href="https://www.youtube.com/channel/UCPrTbX6j27POmgXEZPlMV-g"> <img src="images/YouTube.png"/></a></li>
+					<li><img src="images/twitter.png"/></li>
+					<li><a href="https://zh.moegirl.org/%E9%9B%ABLulu"><img src="images/mengniang.png"/></a></li>
+				</ul> -->
+			</div>
+		</header>
+		<button class="trigger" data-info="Time  Line"><span class="layui-anim layui-anim-scale layui-anim-loop"></span></button> #}
+		<div class="nav">
+			<ul>
+				<li><a href="/">首页</a></li>
+				<li><a href="/momo">桃树</a></li>
+				<li><a href="/sutanpu">表情包</a></li>
+				<li><a href="/about">关于</a></li>
+			</ul>			
+		</div>
+	</div>
+    
+    {% block main %} {% endblock %}
+
+</body>
+</html>
+

@@ -1,0 +1,68 @@
+// lo-style, ver0.0.1
+// by lomot 20180726
+@lo-scrollbar-item-size: 3.6rem;
+@lo-scrollbar-bg: rgba(177, 177, 177, 0.322);
+@lo-scrollbar-bg-active: rgb(88, 141, 85);
+@lo-scrollbar-text: rgb(88, 141, 85);
+@lo-scrollbar-text-active: rgb(206, 206, 206);
+@lo-scrollbar-text-border: rgba(158, 158, 158, 0.226);
+.lo-row1 {
+  .lo-row1-item {
+    height: 150px;
+    color: #666;
+    border-left: 1px solid #ddd;
+    padding: 16px 32px;
+    &:hover {
+      background-color: #fff;
+    }
+    .title {
+      font-size: 18px;
+      margin-bottom: 12px;
+    }
+    .title2 {
+      font-size: 14px;
+    }
+    .pic {
+      height: 64px;
+      width: 64px;
+      display: block;
+      position: absolute;
+      right: 16px;
+      bottom: 16px;
+    }
+  }
+  .lo-row1-item-last {
+    border-right: 1px solid #ddd;
+  }
+}
+
+.lo-scrollbar {
+  position: fixed;
+  right: 2rem;
+  bottom: 9rem;
+  z-index: 10;
+  .lo-scrollbar-inner {
+    .lo-scrollbar-item {
+      display: block;
+      border-bottom: 1px solid @lo-scrollbar-text-border;
+
+      background-color: @lo-scrollbar-bg;
+      color: @lo-scrollbar-text;
+      height: @lo-scrollbar-item-size;
+      width: @lo-scrollbar-item-size;
+      line-height: @lo-scrollbar-item-size;
+      text-align: center;
+      &:hover {
+        color: @lo-scrollbar-text-active;
+        background-color: @lo-scrollbar-bg-active;
+      }
+      i {
+        font-size: @lo-scrollbar-item-size/2;
+        font-weight: 900;
+      }
+    }
+    .lo-scrollbar-item-last {
+      border-bottom: 0;
+    }
+  }
+}

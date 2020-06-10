@@ -1,0 +1,54 @@
+.lo-row1 .lo-row1-item {
+  height: 150px;
+  color: #666;
+  border-left: 1px solid #ddd;
+  padding: 16px 32px;
+}
+.lo-row1 .lo-row1-item:hover {
+  background-color: #fff;
+}
+.lo-row1 .lo-row1-item .title {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+.lo-row1 .lo-row1-item .title2 {
+  font-size: 14px;
+}
+.lo-row1 .lo-row1-item .pic {
+  height: 64px;
+  width: 64px;
+  display: block;
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+}
+.lo-row1 .lo-row1-item-last {
+  border-right: 1px solid #ddd;
+}
+.lo-scrollbar {
+  position: fixed;
+  right: 2rem;
+  bottom: 9rem;
+  z-index: 10;
+}
+.lo-scrollbar .lo-scrollbar-inner .lo-scrollbar-item {
+  display: block;
+  border-bottom: 1px solid rgba(158, 158, 158, 0.226);
+  background-color: rgba(177, 177, 177, 0.322);
+  color: #588d55;
+  height: 3.6rem;
+  width: 3.6rem;
+  line-height: 3.6rem;
+  text-align: center;
+}
+.lo-scrollbar .lo-scrollbar-inner .lo-scrollbar-item:hover {
+  color: #cecece;
+  background-color: #588d55;
+}
+.lo-scrollbar .lo-scrollbar-inner .lo-scrollbar-item i {
+  font-size: 1.8rem;
+  font-weight: 900;
+}
+.lo-scrollbar .lo-scrollbar-inner .lo-scrollbar-item-last {
+  border-bottom: 0;
+}

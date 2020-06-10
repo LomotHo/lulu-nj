@@ -1,0 +1,12 @@
+version: '2'
+
+services:
+   web:
+      build: .
+      image: yonglai-nj
+      container_name: yonglai
+      ports:
+         - 8050:80
+      restart: always
+      stdin_open: true
+      tty: true

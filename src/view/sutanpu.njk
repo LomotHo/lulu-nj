@@ -1,0 +1,32 @@
+{% extends "base.njk" %}
+{% block main %}
+
+<style>
+  .sutanpu {
+    padding-top: 70px;
+  }
+  .sutanpu .item {
+    vertical-align: middle;
+    height: 200px;
+    padding: 16px 0;
+  }
+  img{
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: auto;
+  }
+</style>
+<div class="layui-fluid">
+  <div class="layui-row layui-col-space16 sutanpu">
+
+    {% for sutanpu in ui.sutanpu %}
+      <div class="item layui-col-xs6 layui-col-sm4 layui-col-md3">
+        <img class="" src="{{sutanpu.src}}" alt="">
+      </div>
+    {% endfor %}
+
+  </div>
+</div>
+{% endblock %}
+

@@ -1,0 +1,69 @@
+/* var */
+
+@brand-color: #588d55;
+@brand-color-dark: #517c4e;
+@brand-text-color: #f6f6f6;
+@brand-text-color-dark: #d1d1d1;
+@footer-height: 8.5rem;
+@nav-height: 3.5rem;
+@banner-height: 5.2rem;
+@carousel-heght: 32rem;
+/* Base */
+
+
+a {
+  text-decoration: none;
+  color: @brand-text-color;
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: none;
+    color: @brand-text-color-dark;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+/* Sticky footer styles */
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: @footer-height;
+  color: #5a5a5a;
+  // padding-top: @banner-height;
+}
+
+.row-margin-bottom {
+  margin-bottom: 2.5rem;
+}
+
+// .row-padding-bottom {
+//   padding-bottom: 2.5rem;
+// }
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: @footer-height;
+  padding: 2rem 0;
+  background-color: @brand-color;
+  text-align: center;
+  .y-footer-inner {
+    line-height: 1.5rem;
+    color: @brand-text-color;
+    font-size: 0.8rem;
+    a {
+      color: @brand-text-color;
+      &:hover,
+      &:active,
+      &:focus {
+        color: @brand-text-color-dark;
+      }
+    }
+  }
+}
+

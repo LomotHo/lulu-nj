@@ -1,0 +1,30 @@
+{
+  "name": "lulu-nj",
+  "version": "1.0.0",
+  "description": "lulu nunjucks",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./app.js",
+    "test-init": "NODE_ENV=test node ./unit/init-db.js",
+    "test": "NODE_ENV=test node ./app.js",
+    "dev": "NODE_ENV=test gulp"
+  },
+  "author": "lomot",
+  "license": "ISC",
+  "dependencies": {
+    "koa": "^2.7.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-router": "^7.4.0",
+    "koa-static": "^4.0.3",
+    "mime": "^2.4.4",
+    "mz": "^2.7.0",
+    "nunjucks": "^3.2.0",
+    "unirest": "^0.6.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.5.0",
+    "gulp-nodemon": "^2.4.2"
+  }
+}
