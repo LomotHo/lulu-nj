@@ -1,5 +1,6 @@
 {% extends "base.njk" %}
 {% block main %}
+	<link rel="stylesheet" type="text/css" href="lib/css/stanpu.css" />
 
 <style>
   .sutanpu {
@@ -8,7 +9,7 @@
   .sutanpu .item {
     vertical-align: middle;
     height: 200px;
-    padding: 16px 0;
+    padding: 16px 8px;
   }
   img{
     max-width: 100%;
@@ -18,15 +19,27 @@
   }
 </style>
 <div class="layui-fluid">
-  <div class="layui-row layui-col-space16 sutanpu">
+  <div class="layui-row sutanpu">
 
-    {% for sutanpu in ui.sutanpu %}
+    {# {% for sutanpu in ui.sutanpu %}
       <div class="item layui-col-xs6 layui-col-sm4 layui-col-md3">
         <img class="" src="{{sutanpu.src}}" alt="">
       </div>
     {% endfor %}
 
-  </div>
+  </div> #}
+    {% for sutanpu in ui.sutanpu %}
+  				<div class="item layui-col-xs6 layui-col-sm4 layui-col-md3 wow rollIn">
+              <img class="" src="{{sutanpu.src}}" alt="" id="over">
+					</div>
+    {% endfor %}
+
 </div>
+<div id="adsbox">&nbsp;</div>
+<script src="lib/js/wow.min.js"></script>
+<script>
+  new WOW().init();
+  
+</script>
 {% endblock %}
 

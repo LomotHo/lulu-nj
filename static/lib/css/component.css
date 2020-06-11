@@ -9,7 +9,12 @@
 		url('../fonts/icomoon/icomoon.svg?-ee0u0f#icomoon') format('svg');
 }
 
-
+html, body, .container, .header {
+	height: 100%;
+}
+body{
+	background-image: url(../../images/lulu_window.webp);
+}
 /* Header */
 .header {
 	position: relative;
