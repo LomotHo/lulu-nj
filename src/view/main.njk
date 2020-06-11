@@ -8,7 +8,10 @@ html, body, .container, .header {
 }
 
 body {
-  background-image: url(/images/lulu_window.webp);
+  background-image: url("/images/lulu_window.webp");
+  {# background-image: url("/images/lulu_gachi.jpg"); #}
+  background-attachment: fixed;
+	
 }
 .main-page-slider-item {
 	display: block;
@@ -17,7 +20,7 @@ body {
 	widows: 100%;
 	height: 100%；
 }
-.trigger::before {
+.trigger {
   color: #222;
 }
 .timeline {
@@ -33,8 +36,8 @@ body {
 			height: 100%;
 		}
 		.marquee-text{
-			height: 100%
-			width:100%;
+			height: 100%;
+			width: 100%;
 			onMouseOut = "this.start()";
 			onMouseOver="this.stop()";
 		}
