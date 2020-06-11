@@ -12,7 +12,7 @@ function endsWithAny(suffixes, string) {
   });
 }
 
-function findJpeg(dir) {
+function findImg(dir) {
   let img_files = fs.readdirSync(dir).filter((f) => {
     // return f.endsWith(".jpeg");
     return endsWithAny([".jpeg", ".jpg", ".png", "gif"], f);
@@ -29,9 +29,8 @@ function findJpeg(dir) {
   })
 }
 
-let jpeg_dir = path.resolve(__dirname, "../static/images/sutanpu");
-console.log(`=>jpeg_dir: ${jpeg_dir}`);
-findJpeg(jpeg_dir);
+let img_dir = path.resolve(__dirname, "../static/images/sutanpu");
+findImg(img_dir);
 
 module.exports = {
   getAll: async () => {
