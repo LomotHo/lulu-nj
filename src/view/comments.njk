@@ -1,11 +1,26 @@
 
 {% extends "base.njk" %}
 {% block main %}
+<style>
+  .comments {
+    padding-top: 70px;
+  }
+  .comments .item {
+    vertical-align: middle;
+    padding: 16px 8px;
+  }
+
+</style>
 <div class="container">
 <div class="layui-fluid">
+  <div class="layui-row comments">
 
-  <div>
-    <p>comments</p>
-  </div>
+    {% for comment in ui.comments %}
+  				<div class="item layui-col-xs6 layui-col-sm4 layui-col-md12">
+              <h2>{{comment.name}}</h2>
+              <p>{{comment.content}}</p>
+					</div>
+    {% endfor %}
+	</div>
 </div>
 {% endblock %}
