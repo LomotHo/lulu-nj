@@ -15,11 +15,34 @@ body {
 }
 
 .timeline {
-	padding-top: 32px;
-	margin-top: 32px;
+	#padding-top: 32px;
+	#margin-top: 32px;
+	z-index: 2;
 }
+
+		.textflote{
+			position: fixed;
+			top: 300px;
+			width: 100%;
+			height: 100%;
+		}
+		.marquee-text{
+			height: 100%
+			width:100%;
+			onMouseOut = "this.start()";
+			onMouseOver="this.stop()";
+		}
 </style>
 	<div id="container" class="container intro-effect-push">
+		<div class="textflote">
+				<marquee onMouseOver = "this.stop()" onMouseOut="this.start()"direction=left>佐倉栞：一周年おめでとうございます！これからもよろしく(｡◝ᴗ◜｡）るるのために頑張ります</marquee>
+				<marquee scrolldelay="100" direction=left>肥奥·胖兰度：  恭喜lulu一周年，能遇见lulu真是太好了!
+				</marquee><marquee direction=left>未来喵：  恭喜lulu一周年！拜托了，不要忘记我们（お願いします、私たちを忘れないでください）！真的最喜欢（大好き）lulu了！
+				</marquee><marquee direction=left>天の雾: 恭喜lulu一周年，会继续一直喜欢你的！❤一周年おめでとう、これからもずっと好きだよ！❤
+				</marquee><marquee direction=left>kisama：lulu一周年恭喜了，你在几周年，我就陪你几周年。
+				</marquee><marquee direction=left>母狩り：恭喜lulu一周年，るるのこと大好き，もうるる以外の女の子が好きになれないQAQ
+				</marquee>
+		</div>
 		<header class="main-page-slider-item header" id = "head">
 			<!-- <img  src="images/lulu.png"/> -->
 			<div class="bg-img"><img src="images/lulu_window.jpg" alt="Background Image"/></div>
@@ -35,15 +58,14 @@ body {
 			</div>
 		</header>
 		<button class="main-page-slider-item trigger" data-info="Time  Line"><span class="layui-anim layui-anim-scale layui-anim-loop"></span></button>
-	</div>
-	<div id="container0" class="container">
-
+	{# </div>
+	<div id="container0" class="container"> #}
     <div class="title">
 			<h1 style="color: #333;"> 雫るる</h1>
 			<p class="subline" style="color: #333;">小心Vtuber，小心雫るる</p>
 		</div>
-		<article class=" content">
-			<div class="timeline linecolor" style="background-color: rgba(250,250,250,0.8);">
+		<article class="timeline content">
+			<div class="linecolor" style="background-color: rgba(250,250,250,0.8);">
 					<p>官方活动</p>
 					<p>2019年</p>
 					<ul class="layui-timeline">
@@ -400,7 +422,6 @@ body {
 				trigger.addEventListener( 'click', function() { toggle( 'reveal' ); } );
 			})();
 		</script>
-
 {# {% include "./component/carousel.njk" %}
 {% include "./component/row-hot.njk" %}
 {% include "./component/row-service.njk" %}
