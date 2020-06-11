@@ -2,12 +2,16 @@
 {% extends "base.njk" %}
 {% block main %}
 <style>
+  body {
+    background-image: url(/images/lulu_window.webp);
+  }
   .comments {
     padding-top: 70px;
   }
   .comments .item {
     vertical-align: middle;
     padding: 16px 8px;
+    background-color: rgba(250,250,250,0.8);
   }
 
 </style>
@@ -16,10 +20,10 @@
   <div class="layui-row comments">
 
     {% for comment in ui.comments %}
-  				<div class="item layui-col-xs6 layui-col-sm4 layui-col-md12">
-              <h2>{{comment.name}}</h2>
-              <p>{{comment.content}}</p>
-					</div>
+        <div class="item layui-col-md8 layui-col-md-offset2">
+            <h2>{{comment.name}}</h2>
+            <p>{{comment.content}}</p>
+        </div>
     {% endfor %}
 	</div>
 </div>
