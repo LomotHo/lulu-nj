@@ -2,7 +2,7 @@ const action = require("../dao");
 
 
 module.exports = {
-    'GET /': async (ctx, next) => {
+    'GET /main': async (ctx, next) => {
 
         ctx.render('main.njk', {
             "ui": {
