@@ -34,8 +34,9 @@
   				<div class="item layui-col-xs6 layui-col-sm4 layui-col-md3 wow 
           {% if sutanpu.key%4==0 %}bounceInUp{% endif %} {% if sutanpu.key%4==1 %}rollIn{% endif %} 
           {% if sutanpu.key%4==2 %}bounceInDown{% endif %} {% if sutanpu.key%4==3 %}lightSpeedIn{% endif %}">
-              {# <img class="" src="{{sutanpu.src}}" alt="" id="over"> #}
-              <img class="" src="{{sutanpu.src}}" alt="" id="{{sutanpu.key}}">
+          {# <div class="item layui-col-xs6 layui-col-sm4 layui-col-md3 wow rollIn"> #}
+              <img class="" src="{{sutanpu.src}}" alt="" id="over">
+              {# <img class="" src="{{sutanpu.src}}" alt="" id="{{sutanpu.key}}"> #}
 					</div>
     {% endfor %}
 
