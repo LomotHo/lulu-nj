@@ -32,6 +32,7 @@
   author: "xxx" //可选
 }
 ```
+
 ### 同人视频页面 video （可选）
 视频只放b站链接，前端可以嵌入b站播放器或者直接跳转。
 其实b站主页有视频，此页面用处不大，点击导航栏直接跳转lulu的b站主页都行。
@@ -57,7 +58,13 @@
 ```
 
 ### 留言 comment（旧网站保留项目）
-
+```js
+{
+  id: "xxxx",
+  author: "xxxx",
+  content: "xxxx",
+}
+```
 
 ## 二. 后台
 托管资源，提供api
@@ -67,7 +74,7 @@
  - 密码修改（可选）
  - 对 **表情包，同人图，同人音乐，同人视频，留言** 的增删改查
 
-（后台与后台页面之间不一定需要前后分离，如需分离则需要设计对应的api）
+（后台与后台页面之间不一定需要前后分离，如需分离则需要继续设计对应的api）
 
 ----
 
@@ -110,6 +117,26 @@
 }
 ```
 
+
+ - GET /api/v1/music-list 获取同人音乐列表
+
+```js
+//返回数据
+{
+  status: true
+  data: {
+    music:[
+      {
+        id: "xxxx",
+        url: "xxxx",
+        name: "xxx",//可选
+        author: "xxx" //可选
+      }
+    ]
+  }
+}
+```
+
  - GET /api/v1/comment-list 获取留言列表
  
 ```js
@@ -117,7 +144,7 @@
 {
   status: true
   data: {
-    photo:[
+    comment:[
       {
         id: "xxxx",
         author: "xxxx",
@@ -135,7 +162,7 @@
 {
   status: true
   data: {
-    photo:[
+    timeline: [
       {
         id: "xxxx",
         date: "yyyy年mm月dd日",
