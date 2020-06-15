@@ -4,7 +4,7 @@
 ## 一. 前端页面
 ### 表情包页面 sutanpu
 
-```json
+```js
 {
   id: "xxxx",
   url: "xxxx",
@@ -14,7 +14,7 @@
 
 ### 同人图页面 photo
 
-```json
+```js
 {
   id: "xxxx",
   url: "xxxx",
@@ -24,7 +24,7 @@
 ```
 ### 同人音乐页面 music （可选）
 
-```json
+```js
 {
   id: "xxxx",
   url: "xxxx",
@@ -36,7 +36,7 @@
 视频只放b站链接，前端可以嵌入b站播放器或者直接跳转。
 其实b站主页有视频，此页面用处不大，点击导航栏直接跳转lulu的b站主页都行。
 
-```json
+```js
 {
   id: "xxxx",
   url: "xxxx",
@@ -47,7 +47,7 @@
 
 ### 时间线页面 timeline
 
-```json
+```js
 {
   id: "xxxx",
   date: "yyyy年mm月dd日",
@@ -75,7 +75,7 @@
 
  - GET /api/v1/sutanpu-list 获取表情包列表
 
-```json
+```js
 //返回数据
 {
   status: true
@@ -93,7 +93,7 @@
 
  - GET /api/v1/photo-list 获取同人图列表
 
-```json
+```js
 //返回数据
 {
   status: true
@@ -112,7 +112,7 @@
 
  - GET /api/v1/comment-list 获取留言列表
  
-```json
+```js
 //返回数据
 {
   status: true
@@ -130,7 +130,7 @@
 
  - GET /api/v1/timeline-list 获取时间线列表
  
-```json
+```js
 //返回数据
 {
   status: true
@@ -149,7 +149,7 @@
 
  - 返回错误
 
-```json
+```js
 {
   status: false
   code: "ERROR_xxx" //错误码
